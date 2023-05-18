@@ -3,39 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- You can create a separate CSS file for styling -->
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="container">
+                <div class="logo">
+                    <a href="#home">Your Name</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <!-- Your content goes here -->
-        </section>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am a passionate <span class="highlight">web developer</span> ready to create amazing websites.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h1>Projects</h1>
-            <!-- Your content goes here -->
-        </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hi, I'm Your Name</h3>
+                    <p>I am a web developer with expertise in HTML, CSS, and JavaScript. I love building intuitive and responsive websites that deliver great user experiences.</p>
+                    <p>Passionate about technology, I'm always eager to learn new skills and stay up-to-date with the latest industry trends.</p>
+                </div>
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <!-- Your content goes here -->
-        </section>
-    </main>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut suscipit libero.</p>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut suscipit libero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
-</body>
-</html>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have any inquiries or would like to work together on a project, feel free to get in touch.</p>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message
